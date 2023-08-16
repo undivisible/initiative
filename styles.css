@@ -1,0 +1,160 @@
+html {
+    cursor: none;
+}
+
+body {
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 50%
+}
+
+img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.section {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 50%
+}
+
+.info {
+    font-family: 'Darker Grotesque', monospace;
+    font-size: 24px;
+    color: white;
+}
+
+.dot-cursor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
+
+.dropdown {
+    font-family: 'Darker Grotesque';
+    font-size: larger;
+    display: inline-block;
+    z-index: 13;
+    background-color: transparent;
+    color: #eceff4;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 9;
+}
+
+.dropdown-content a {
+    font-family: 'Darker Grotesque';
+    color: #eceff4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #8787872e; border-radius: 5px;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 90;
+}
+
+.left {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 91;
+}
+
+.russian {
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+body.fadeout {
+    animation: fadeOut 0.5s ease-out;
+}
+      
+#blob {
+    z-index: 1; /* Ensure the blob is above other elements */
+    background-color: white;
+    height: 34vmax;
+    width: 34vmax;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+}
+
+#blur {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(12vmax);
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+    50% {
+        scale: 1 1.5;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+  
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 100px;
+}
