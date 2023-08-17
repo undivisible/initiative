@@ -104,7 +104,7 @@ img {
     z-index: 92;
 }
 
-.bottom {
+.down {
     display: flex;
     position: absolute;
     left: 50%;
