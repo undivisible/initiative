@@ -140,6 +140,14 @@ img {
     z-index: 1000;
 }
 
+.topleft {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 94;
+}
+
 .close-icon {
     position: absolute;
     top: 10px;
