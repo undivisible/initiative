@@ -140,7 +140,7 @@ img {
     z-index: 1000;
 }
 
-.topleft {
+.topright {
     display: flex;
     position: absolute;
     right: 20px;
