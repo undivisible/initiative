@@ -50,6 +50,29 @@
         <p class="info">dengan reva, wulan, egit, saniyyah, chelsea, lily and matilda.<br>dibuat dengan menggunakan github dengan raw html css dan js, dengan bantuan dari claude dan openai. (ini memakan waktu terlalu lama, mohon bantuan dari seseorang) <br>video debuat dengan davinci resolve dan lagunya adalah slow dancing in the dark by joji. <br>fonts dibuat darker grotesque, space grotesk, tt interphases, wixmadefortext dan anantason.</p>
     </div>
 
+    <script>
+        const openModalBtn = document.getElementById('openModal');
+        const modal = document.getElementById('myModal');
+        
+        openModalBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        // Add click event to close button
+        const closeIcon = document.querySelector('.close-icon');
+
+        closeIcon.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // You can also close the modal when clicking outside the modal content
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+
     <script src="../script.js"></script>
 
 </body>

@@ -50,6 +50,29 @@
         <p class="info">制作 reva, wulan, egit, saniyyah, chelsea, lily and matilda.<br>powered by github with raw html css and js, with the help of claude and openai. (this took way too long someone please help) <br>video was made with davinci resolve and the song is slow dancing in the dark by joji. <br>fonts used are darker grotesque, space grotesk, tt interphases, wixmadefortext and anantason.</p>
     </div>
 
+    <script>
+        const openModalBtn = document.getElementById('openModal');
+        const modal = document.getElementById('myModal');
+        
+        openModalBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        // Add click event to close button
+        const closeIcon = document.querySelector('.close-icon');
+
+        closeIcon.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // You can also close the modal when clicking outside the modal content
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+
     <script src="../script.js"></script>
 
 </body>

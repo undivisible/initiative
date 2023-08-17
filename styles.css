@@ -124,12 +124,12 @@ img {
 
 /* Styles for the modal */
 .modal {
-    display: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 300px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 50vh;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
