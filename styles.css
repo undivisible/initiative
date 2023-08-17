@@ -40,7 +40,7 @@ img {
     border-radius: 50%; 
     position: absolute;
     background-color: rgb(255, 255, 255);
-    z-index: 999;
+    z-index: 99999;
     pointer-events: none;
     top: 0;
     left: 0;
@@ -96,8 +96,30 @@ img {
     z-index: 91;
 }
 
+.up {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    z-index: 92;
+}
+
+.bottom {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    z-index: 93;
+}
+
 .russian {
     font-family: 'Wix Madefor Text', sans-serif;
+}
+
+.titles {
+    font-family: 'Space Grotesk', monospace;
+    font-size: x-large;
+    color: #ffffff;
 }
 
 body.fadeout {
