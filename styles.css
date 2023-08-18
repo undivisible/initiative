@@ -125,6 +125,7 @@ img {
 /* Styles for the modal */
 .modal {
     display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
     flex-direction: column;
